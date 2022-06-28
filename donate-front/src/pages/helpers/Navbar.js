@@ -3,12 +3,14 @@ import { NavLink, Link } from 'react-router-dom';
 import logo from './../../images/logo.png';
 
 function openMenu() {
-    var btnMenu = document.querySelector('header button.btn-menu');
-    var menu = document.querySelector('header ul');
-    var overlay = document.querySelector('header .overlay');
-    btnMenu.classList.toggle('active');
-    menu.classList.toggle('active');
-    overlay.classList.toggle('active');
+    if(window.outerWidth < 768){
+        var btnMenu = document.querySelector('header button.btn-menu');
+        var menu = document.querySelector('header ul');
+        var overlay = document.querySelector('header .overlay');
+        btnMenu.classList.toggle('active');
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
 }
 
 export default function Navbar(){
