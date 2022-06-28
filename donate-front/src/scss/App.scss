@@ -1,6 +1,203 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-*, html{
+html, body{
     font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #3DBD8A;
+    padding-top: 20px;
+    button.btn-menu{
+        position: relative;
+        height: 100%;
+        width: 40px;
+        background-color: transparent;
+        float: right;
+        border: 0;
+        span{
+            width: 40px;
+            height: 4px;
+            display: block;
+            position: absolute;
+            top: 8px;
+            background-color: #fff;
+            border-radius: 25px;
+            -webkit-transform: rotate(0);
+            -moz-transform: rotate(0);
+            -o-transform: rotate(0);
+            transform: rotate(0);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+            &:nth-child(2){
+                top: 18px;
+            }
+            &:nth-child(3){
+                top: 28px;
+            }
+        }
+        &.active span:nth-child(1){
+            top: 18px;
+            transform: rotate(45deg);
+        }
+        &.active span:nth-child(2){
+            right: -100px;
+        }
+        &.active span:nth-child(3){
+            top: 18px;
+            transform: rotate(-45deg);
+        }
+    }
+    ul{
+        list-style: none;
+        display: none;
+        height: 100%;
+        position: absolute;
+        top: 61px;
+        transition: all .3s linear;
+        right: -130%;
+        background-color: #3DBD8A;
+        z-index: 15;
+        padding: 20px 30px;
+        bottom: 0;
+        height: calc(100% - 61px);
+        &.active{
+            display: block;
+            right: 0;
+            overflow-y: scroll;
+        }
+        li{
+            margin-bottom: 20px;
+            a{
+                color: #fff;
+                margin: auto;
+                border: none;
+                text-decoration: none;
+                padding: 4px 0;
+                &:hover{
+                    color: #277A59;
+                }
+                &.active{
+                    border-bottom: 4px solid #277A59;
+                }
+                &.btn.btn-green{
+                    background-color: #277A59;
+                    padding: 12px 18.5px;
+                    color: #fff;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .overlay{
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-color: rgba(0,0,0,0.6);
+        bottom: 0;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+
+footer{
+    padding: 70px 0;
+    img{
+        margin: auto;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #808080;
+        &.mt-10{
+            margin-top: 10px;
+        }
+    }
+    h3{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2E2E2E;
+        margin-bottom: 32px;
+    }
+    form{
+        label{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #808080;
+        }
+        button.btn{
+            padding: 12px;
+            background: #FA5050;
+            border-radius: 8px;
+            margin-top: 18px;
+            display: block;
+            width: 100%;
+            border: 0;
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        background-color: #3DBD8A;
+        padding-top: 20px;
+        button.btn-menu{
+            display: none;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+            position: relative;
+            padding: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            li{
+                margin: 0;
+                a{
+                    color: #fff;
+                    margin: auto;
+                    border: none;
+                    text-decoration: none;
+                    padding: 4px 0;
+                    &:hover{
+                        color: #277A59;
+                    }
+                    &.active{
+                        border-bottom: 4px solid #277A59;
+                    }
+                    &.btn.btn-green{
+                        background-color: #277A59;
+                        padding: 12px 18.5px;
+                        color: #fff;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        margin: 0;
+    }
 }
