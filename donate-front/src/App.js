@@ -2,6 +2,7 @@ import * as React from 'react';
 import Rotas from './router';
 import './scss/App.scss';
 import Navbar from './pages/helpers/Navbar';
+import Contato from './pages/helpers/Contato';
 import Footer from './pages/helpers/Footer';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar></Navbar>
       <h1>Hello World!</h1>
       <Rotas></Rotas>
+      <Contato></Contato>
       <Footer></Footer>
     </div>
   );

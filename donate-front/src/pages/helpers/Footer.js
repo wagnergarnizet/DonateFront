@@ -9,11 +9,11 @@ export default function Footer(){
         <footer>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-3 mb-mob">
                         <img src={Logo} alt="Logo footer" className="img-fluid"></img>
                         <p className="mt-10">Donate Management - é uma plataforma onde as instituições poderão organizar o recebimento das doações, realizar sua gestão e promover campanhas para arrecadação de suprimentos.</p>
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-3 mb-mob">
                         <h3>Contato</h3>
                         <div className="row">
                             <div className="col-1">
@@ -48,7 +48,7 @@ export default function Footer(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-3 mb-mob">
                         <h3>Últimas Atualizações</h3>
                         <div className="row">
                             <div className="col-3">
@@ -67,15 +67,15 @@ export default function Footer(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-3 mb-mob">
                         <h3>Receba as notificações</h3>
                         <p>Receba as notificações acerca de novas campanhas e faça a dferença!</p>
                         <form method='POST'>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label for="email">Seu E-mail</label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="error" required/>
+                                <input type="email" name="email" id="email" className="form-control" placeholder="Digite seu email" aria-describedby="error" required/>
                             </div>
-                            <button type="submit" name="submit" id="submit" class="btn">Enviar</button>
+                            <button type="submit" name="submit" id="submit" className="btn">Enviar</button>
                         </form>
                     </div>
                 </div>
