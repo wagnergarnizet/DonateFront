@@ -110,6 +110,222 @@ header{
     }
 }
 
+#home{
+    #banner{
+        background-color: #3DBD8A;
+        padding: 44px 0 34px;
+        border-radius: 0px 0px 0px 80px;
+        h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            color: #fff;
+            margin-bottom: 35px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #E6E6E6;
+            margin-bottom: 40px;
+        }
+        .col-md-6:first-child{
+            margin: auto;
+        }
+        a.btn-como-ajudar{
+            background: #FA5050;
+            border-radius: 8px;
+            padding: 12px 34px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        a.btn-conheca{
+            display: inline-flex;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        img{
+            margin: 28px auto 0;
+            display: block;
+        }
+        .buttons *{
+            margin: auto;
+        }
+    }
+    #sobreNos{
+        margin-top: 89px;
+        padding: 60px 0;
+        background: linear-gradient(180deg, #E2EEEC -5.54%, rgba(227, 239, 237, 0) 100%);
+        h2{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 88px;
+            color: #2E2E2E;
+            margin-bottom: 10px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #0B0A0A;
+            margin-bottom: 23px;
+        }
+        .card{
+            border-radius: 16px;
+            padding: 32px 32px 0;
+            height: 350px;
+            border: 0;
+            margin-bottom: 30px;
+            &.green{
+                background-color: #3DBD8A;
+                span.icon{
+                    background: #254330;
+                }
+                h3{
+                    color: #FFFFFF;
+                }
+                p{
+                    color: #E6E6E6;
+                }
+            }
+            span.icon{
+                padding: 14px;
+                background: #E2EEEC;
+                display: block;
+                margin-bottom: 8px;
+                border-radius: 16px;
+                width: 80px;
+                height: 80px;
+                text-align: center;
+            }
+            h3{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                color: #2E2E2E;
+                margin-bottom: 6px;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                color: #808080;
+            }
+        }
+    }
+    #campanhas{
+        padding: 100px 0;
+        h2{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 88px;
+            color: #2E2E2E;
+            margin-bottom: 40px;
+        }
+        .btn-campanhas{
+            background: #53C351;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+            padding: 12px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        .card-destaque{
+            a.barra-link{
+                background-color: #3DBD8A;
+                padding: 45px 45px 35px;
+                position: relative;
+                display: block;
+                border-radius: 0px 0 0 16px;
+                text-decoration: none;
+                img{
+                    width: 100%;
+                }
+                span.icon{
+                    position: absolute;
+                    top: calc(50% - 22px);
+                    right: 45px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #E6E6E6;
+                }
+                h3{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .card{
+            position: relative;
+            border: 0;
+            margin-bottom: 36px;
+            a.barra-link{
+                background-color: #3DBD8A;
+                padding: 24px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                border-radius: 0px 0 0 16px;
+                text-decoration: none;
+                img{
+                    width: 100%;
+                }
+                span.icon{
+                    position: absolute;
+                    top: calc(50% - 15px);
+                    right: 25px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #E6E6E6;
+                    margin: 0;
+                }
+                h3{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
 #contato{
     padding: 100px 0;
     position: relative;
@@ -287,6 +503,26 @@ footer{
                         margin-left: 20px;
                     }
                 }
+            }
+        }
+    }
+
+    #home{
+        #banner{
+            h1{
+                font-size: 64px;
+                line-height: 88px;
+            }
+            a.btn-como-ajudar{
+                margin-bottom: 0;
+            }
+            img{
+                margin: auto;
+            }
+        }
+        #sobreNos{
+            .card{
+                margin-bottom: 0;
             }
         }
     }
