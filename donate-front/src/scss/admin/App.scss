@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+#login{
+    background-color: gray;
+    .bg-card{
+        background-color: #fff;
+        padding: 24px;
+        border-radius: 20px;
+    }
+}
