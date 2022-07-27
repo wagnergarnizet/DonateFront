@@ -32,7 +32,7 @@ export default function Navbar(){
                                 <NavLink onClick={openMenu} to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
                             </li>
                             <li>
-                                <Link onClick={openMenu} to="#sobre-nos">Sobre Nós</Link>
+                                <Link onClick={openMenu} to={{pathname: "/", hash: "#sobreNos", state: {fromDashboard: true}}}>Sobre Nós</Link>
                             </li>
                             <li>
                                 <NavLink onClick={openMenu} to="/instituicoes" className={({ isActive }) => (isActive ? "active" : "")}>Instituições</NavLink>

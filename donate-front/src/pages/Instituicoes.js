@@ -11,7 +11,7 @@ import LogoIgrAdventista from './../images/igreja-adventista.jpg';
 import LogoSocCatolica from './../images/igreja-catolica.jpg';
 import LogoAnjResgate from './../images/anjos-resgate.jpg';
 
-export default function Home(){
+export default function Instituicoes(){
     return (
         <section id="home">
             <section id="banner">

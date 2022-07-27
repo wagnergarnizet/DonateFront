@@ -72,7 +72,7 @@ export default function Footer(){
                         <p>Receba as notificações acerca de novas campanhas e faça a dferença!</p>
                         <form method='POST'>
                             <div className="form-group">
-                                <label for="email">Seu E-mail</label>
+                                <label htmlFor="email">Seu E-mail</label>
                                 <input type="email" name="email" id="email" className="form-control" placeholder="Digite seu email" aria-describedby="error" required/>
                             </div>
                             <button type="submit" name="submit" id="submit" className="btn">Enviar</button>
