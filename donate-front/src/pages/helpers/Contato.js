@@ -3,13 +3,15 @@ import { NavLink, Link } from 'react-router-dom';
 import BgImage from './../../images/bg-contato.png';
 
 function focusInput(e){
-    var label = document.querySelector('label[htmlFor=' + e.target.id + ']');
-    label.style.top = "-24px";
+    var label = document.querySelector('label[for=' + e.target.id + ']');
+    label.style.top  = "-26px";
+    label.style.left = "0px";
 }
 function blurInput(e){
-    var label = document.querySelector('label[htmlFor=' + e.target.id + ']');
+    var label = document.querySelector('label[for=' + e.target.id + ']');
     if(e.target.value == ""){
         label.style.top = "10px";
+        label.style.left = "15px";
     }
 }
 
