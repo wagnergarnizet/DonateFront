@@ -482,6 +482,101 @@ header{
 
 }
 
+#instituicao-conteudo{
+    #banner{
+        background-color: #3DBD8A;
+        padding: 64px 0 44px;
+        border-radius: 0px 0px 0px 80px;
+        h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            color: #fff;
+            margin-bottom: 35px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #E6E6E6;
+            margin-bottom: 40px;
+        }
+    }
+
+    #content-instuicao{
+
+        margin: 60px 0px;
+
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+
+            li{
+
+                display: inline-block;
+                padding: 25px 30px;
+                border-radius: 25px 25px 0px 0px;
+                background: #E7F1EF;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 34px;
+                text-align: center;
+                color: #000000;
+                width: 296px;
+                cursor: pointer;
+
+                &.active{
+
+                    background: #3DBD8A;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 34px;
+                    text-align: center;
+                    color: #FFFFFF;
+
+                }
+
+            }
+
+        }
+
+        .content-tab{
+
+            padding: 97px 57px;
+            background-color: #3DBD8A;
+            border-radius: 0px 0px 25px 25px;
+
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+
+            &.disabled{
+                display: none;
+            }
+
+            img.rounded{
+
+                border-radius: 8px;
+
+            }
+
+        }
+
+    }
+
+}
+
 #campanhas-pagina{
     #banner{
         background-color: #3DBD8A;

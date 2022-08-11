@@ -9,6 +9,7 @@ function focusInput(e){
     label.style.top  = "-26px";
     label.style.left = "0px";
 }
+
 function blurInput(e){
     var label = document.querySelector('label[for=' + e.target.id + ']');
     if(e.target.value == ""){
@@ -51,7 +52,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/adventista-do-setimo-dia" className='barra-link'>
+                                    <Link to="/instituicao/adventista-do-setimo-dia" className='barra-link'>
                                         <img src={LogoIgrAdventista} className="img-fluid" alt='Logo Igr Adventista'/>
                                     </Link>
                                 </div>
@@ -65,7 +66,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/igreja-catolica-diocese-jundiai" className='barra-link'>
+                                    <Link to="/instituicao/igreja-catolica-diocese-jundiai" className='barra-link'>
                                         <img src={LogoSocCatolica} className="img-fluid" alt='Logo Soc Catolica'/>
                                     </Link>
                                 </div>
@@ -79,7 +80,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/anjos-do-resgate" className='barra-link'>
+                                    <Link to="/instituicao/anjos-do-resgate" className='barra-link'>
                                         <img src={LogoAnjResgate} className="img-fluid" alt='Logo Anj Resgate'/>
                                     </Link>
                                 </div>
@@ -96,7 +97,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/adventista-do-setimo-dia" className='barra-link'>
+                                    <Link to="/instituicao/adventista-do-setimo-dia" className='barra-link'>
                                         <img src={LogoIgrAdventista} className="img-fluid" alt='Logo Igr Adventista'/>
                                     </Link>
                                 </div>
@@ -110,7 +111,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/igreja-catolica-diocese-jundiai" className='barra-link'>
+                                    <Link to="/instituicao/igreja-catolica-diocese-jundiai" className='barra-link'>
                                         <img src={LogoSocCatolica} className="img-fluid" alt='Logo Soc Catolica'/>
                                     </Link>
                                 </div>
@@ -124,7 +125,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/anjos-do-resgate" className='barra-link'>
+                                    <Link to="/instituicao/anjos-do-resgate" className='barra-link'>
                                         <img src={LogoAnjResgate} className="img-fluid" alt='Logo Anj Resgate'/>
                                     </Link>
                                 </div>
@@ -141,7 +142,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/adventista-do-setimo-dia" className='barra-link'>
+                                    <Link to="/instituicao/adventista-do-setimo-dia" className='barra-link'>
                                         <img src={LogoIgrAdventista} className="img-fluid" alt='Logo Igr Adventista'/>
                                     </Link>
                                 </div>
@@ -155,7 +156,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/igreja-catolica-diocese-jundiai" className='barra-link'>
+                                    <Link to="/instituicao/igreja-catolica-diocese-jundiai" className='barra-link'>
                                         <img src={LogoSocCatolica} className="img-fluid" alt='Logo Soc Catolica'/>
                                     </Link>
                                 </div>
@@ -169,7 +170,7 @@ export default function Instituicoes(){
                         <div className='col-md-4'>
                             <div className='card-instituicoes'>
                                 <div className='img-largura'>
-                                    <Link to="/instituicoes/anjos-do-resgate" className='barra-link'>
+                                    <Link to="/instituicao/anjos-do-resgate" className='barra-link'>
                                         <img src={LogoAnjResgate} className="img-fluid" alt='Logo Anj Resgate'/>
                                     </Link>
                                 </div>
