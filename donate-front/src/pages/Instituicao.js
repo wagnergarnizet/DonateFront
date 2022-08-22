@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import LogoIgrAdventista from './../images/igreja-adventista.jpg';
-import LogoSocCatolica from './../images/igreja-catolica.jpg';
-import LogoAnjResgate from './../images/anjos-resgate.jpg';
+import MapImg from './../images/map.png';
 import { tab } from '@testing-library/user-event/dist/tab';
 
 function focusInput(e){
@@ -87,9 +86,28 @@ export default function Instituicao(){
                             </div>
 
                             <div id="localizacao" className="content-tab disabled">
-                                <p>
-                                    Localização
-                                </p>
+                                <div className='row'>
+                                    <div className='col-md-5'>
+                                        <div className="title-tab">
+                                            <p>Localização</p>
+                                        </div>
+                                        <div className="desc-location">
+                                            <p>
+                                                Rua: Lorem Input, 127 <br></br>
+                                                Bairro Guaianases, São Paulo - SP <br></br>
+                                                CEP: 000000-000 <br></br>
+                                                <br></br>
+                                                Telefone: (XX) XXXX-XXXX<br></br>
+                                                WhatsApp: (XX) XXXXX-XXXX<br></br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-7'>
+                                        <Link to="#" className='barra-link'>
+                                            <img src={MapImg} className="img-fluid rounded" alt='Mapa Img'/>
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
 
                             <div id="campanhas" className="content-tab disabled">
